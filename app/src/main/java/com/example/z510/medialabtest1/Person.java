@@ -33,6 +33,5 @@ public class Person {
 
     public int calculateDays() {
        return age * 365;
-
     }
 }
