@@ -5,6 +5,12 @@ package com.example.z510.medialabtest1;
  */
 public class Person {
     private String name;
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
     private int age;
 
     public Person() {
@@ -20,6 +26,9 @@ public class Person {
         return age;
     }
 
-    
+    public void setName(String n) { name = n; }
+
+    public void setAge(int a) { age = a; }
+
 
 }
