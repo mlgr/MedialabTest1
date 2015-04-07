@@ -1,7 +1,5 @@
 package com.example.z510.medialabtest1;
 
-import android.widget.Toast;
-
 /**
  * Created by Z510 on 07/04/2015.
  */
@@ -35,9 +33,5 @@ public class Person {
 
     public int calculateDays() {
        return age * 365;
-    }
-
-    public void salute() {
-//        Toast.makeText(t, "Hiho!!", Toast.LENGTH_LONG).show();
     }
 }
