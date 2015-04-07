@@ -34,4 +34,9 @@ public class Person {
     public int calculateDays() {
        return age * 365;
     }
+
+    public String getJose()
+    {
+        return "Jose";
+    }
 }
