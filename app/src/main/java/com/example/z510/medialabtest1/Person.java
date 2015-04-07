@@ -44,4 +44,9 @@ public class Person {
     {
         return "MLuz";
     }
+
+    public String getSuperJose()
+    {
+        return "Super Jose";
+    }
 }
