@@ -35,7 +35,12 @@ public class MainActivity extends ActionBarActivity {
         btnGetAge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),String.valueOf(p.getAge()),Toast.LENGTH_SHORT).show();
+                if (p != null)
+                    Toast.makeText(getApplicationContext(),
+                            String.valueOf(p.getAge()),Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(getApplicationContext(),
+                            "You have to create a person first",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -43,7 +48,12 @@ public class MainActivity extends ActionBarActivity {
         btnGetName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),String.valueOf(p.getName()),Toast.LENGTH_SHORT).show();
+                if (p != null)
+                    Toast.makeText(getApplicationContext(),
+                            String.valueOf(p.getName()),Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(getApplicationContext(),
+                        "You have to create a person first",Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -53,7 +63,6 @@ public class MainActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
-
         return true;
     }
 
